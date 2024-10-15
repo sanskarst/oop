@@ -1,5 +1,5 @@
 #This program demonstrates the BankAccount class.
-
+#basically importing the py file as a library
 import BankAccountClass as bc
 
 def main():
@@ -8,6 +8,9 @@ def main():
    start_bal = float(input('Enter your starting balance: '))
 
    # Create a BankAccount object.
+   #name of instance: savings
+   #name of class: Bank Account
+   #name of ___: start_bal
    savings = bc.BankAccount(start_bal)
 
    # Deposit the user's paycheck.
@@ -23,6 +26,7 @@ def main():
    cash = float(input('How much would you like to withdraw? '))
    print('I will withdraw that from your account.')
    savings.withdraw(cash)
+
 
    # Display the balance.
    print('Your account balance is $', 
